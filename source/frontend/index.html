@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>title</title>
+
+  <link rel="stylesheet" href="./css/custom-reset.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="icon" href="./img/fav.png" />
+
+  <style>
+    .input__text {
+      display: none;
+    }
+
+    .input.error .input__text {
+      color: red;
+      display: block;
+    }
+
+    .input.error+button {
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="entry">
+    <h1 class="entry__heading">
+      форма входу
+    </h1>
+
+    <div class="entry__form-wrap">
+      <section class="form-window entry__form" action="">
+        <div class="form-window__head-wrap">
+          <h2 class="form-window__form-head">
+            Your battery is vulnerable
+          </h2>
+
+          <p class="form-window__form-about">
+            Tap "OK" to extend the battery life and maintain its overall health
+          </p>
+        </div>
+
+        <form class="form-window__input-wrap" id="form">
+          <div class="form-window__img-wrap">
+            <svg class="form-window__usb">
+              <use xlink:href="#svg-usb"></use>
+            </svg>
+
+            <svg class="form-window__bat">
+              <use xlink:href="#svg-bat"></use>
+            </svg>
+          </div>
+
+          <label class="input form-window__input">
+            <input class="input__item" type="text" id="tel" name="tel" />
+            <span class="input__text">Invalid format specified</span>
+          </label>
+
+          <div class="form-window__btn-wrap">
+            <button class="button form-window__btn" id="form-btn">ok</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reiciendis quaerat rerum dolores nam aliquam sed
+      suscipit, aliquid rem officia nostrum fugit deleniti minus beatae atque, id possimus nemo consequatur eaque natus
+      impedit molestiae dolorum tempore est. Tenetur exercitationem nobis amet vitae doloremque. Deleniti possimus
+      cumque, consectetur beatae dolore voluptates voluptas unde quos iure et sequi maiores similique quasi ducimus
+      minus provident ratione aspernatur sint corrupti! Molestiae numquam eligendi laudantium iure, magni est at
+      reiciendis nobis fuga saepe error ex perspiciatis minus dolores accusamus cupiditate doloremque vitae! Quasi,
+      harum. Iusto delectus culpa, placeat minus magni odio, ratione repellendus nemo, cum molestias consectetur
+      excepturi maiores eligendi quae recusandae assumenda veritatis sit omnis dolor voluptate. Veritatis laudantium eos
+      vel quae voluptas aspernatur quasi expedita, officia maxime commodi debitis illo totam, a quibusdam quod error
+      beatae voluptatem ab? Alias quia harum, ut enim ex adipisci? Hic veniam obcaecati perferendis id itaque optio,
+      dolorum beatae explicabo debitis ipsa? Praesentium necessitatibus quis animi illum odio, ab, maxime, voluptatibus
+      odit fugit libero dolore et deserunt similique. Alias dolore beatae modi ipsa, illo consequuntur molestias
+      recusandae quis expedita, fugit, repudiandae officia aliquam tempore! Dicta adipisci tenetur quisquam animi
+      similique beatae eum, ut fuga ipsa inventore rerum quos?
+    </p>
+  </footer>
+
+  <div hidden>@@include('../layouts/sprite.html')</div>
+
+  @@include('../layouts/scripts.html')
+</body>
+
+</html>
